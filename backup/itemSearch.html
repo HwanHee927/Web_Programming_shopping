@@ -10,32 +10,27 @@
         body {
             font-family: 'Noto Sans KR', sans-serif;
         }
-
-            .custom-spacing {
+        .custom-spacing {
             letter-spacing: 0.1em;
-             }
-
-            .spaced p {
-                margin-bottom: 1rem; /* 각 p 태그 아래에 1rem 간격을 줌 */
-            }
+          }
     </style>
 </head>
 <body class="bg-gray-100">
     <header class="bg-white shadow-md">
         <div class="container mx-auto flex justify-between items-center p-5">
             <button class="bg-transparent text-orange-500 border-none px-4 py-2 rounded">
-                <img src="/image/logo.png" alt="Logo" class="h-10"> <!-- 웹 로고 클릭 시 itemSearch.html로 이동하는 기능 구현 -->
-            </button>
-            <nav class="flex space-x-4"> <!--  -->
-                <a href="#" class="text-gray-700 hover:text-orange-500 text-2xl font-bold transition-transform duration-200 hover:scale-110">데스크톱</a>
-                <a href="#" class="text-gray-700 hover:text-orange-500 text-2xl font-bold transition-transform duration-200 hover:scale-110">노트북</a>
-                <a href="#" class="text-gray-700 hover:text-orange-500 text-2xl font-bold transition-transform duration-200 hover:scale-110">CPU</a>
-                <a href="#" class="text-gray-700 hover:text-orange-500 text-2xl font-bold transition-transform duration-200 hover:scale-110">그래픽카드</a>
-                <a href="#" class="text-gray-700 hover:text-orange-500 text-2xl font-bold transition-transform duration-200 hover:scale-110">HDD/SSD</a>
-                <a href="#" class="text-gray-700 hover:text-orange-500 text-2xl font-bold transition-transform duration-200 hover:scale-110">쿨러</a>
-                <a href="#" class="text-gray-700 hover:text-orange-500 text-2xl font-bold transition-transform duration-200 hover:scale-110">케이스</a>
-                <a href="#" class="text-gray-700 hover:text-orange-500 text-2xl font-bold transition-transform duration-200 hover:scale-110">파워</a>
-                <a href="#" class="text-gray-700 hover:text-orange-500 text-2xl font-bold transition-transform duration-200 hover:scale-110">주변기기</a>
+                <img src="/image/logo.png" alt="Logo" class="h-10"> <!-- 웹 로고-->
+              </button>
+              <nav class="flex space-x-4">
+                <a href="#" class="text-gray-700 hover:text-orange-500 text-2xl font-bold custom-spacing transition-transform duration-200 hover:scale-110">데스크톱</a>
+                <a href="#" class="text-gray-700 hover:text-orange-500 text-2xl font-bold custom-spacing transition-transform duration-200 hover:scale-110">노트북</a>
+                <a href="#" class="text-gray-700 hover:text-orange-500 text-2xl font-bold custom-spacing transition-transform duration-200 hover:scale-110">CPU</a>
+                <a href="#" class="text-gray-700 hover:text-orange-500 text-2xl font-bold custom-spacing transition-transform duration-200 hover:scale-110">그래픽카드</a>
+                <a href="#" class="text-gray-700 hover:text-orange-500 text-2xl font-bold custom-spacing transition-transform duration-200 hover:scale-110">HDD/SSD</a>
+                <a href="#" class="text-gray-700 hover:text-orange-500 text-2xl font-bold custom-spacing transition-transform duration-200 hover:scale-110">쿨러</a>
+                <a href="#" class="text-gray-700 hover:text-orange-500 text-2xl font-bold custom-spacing transition-transform duration-200 hover:scale-110">케이스</a>
+                <a href="#" class="text-gray-700 hover:text-orange-500 text-2xl font-bold custom-spacing transition-transform duration-200 hover:scale-110">파워</a>
+                <a href="#" class="text-gray-700 hover:text-orange-500 text-2xl font-bold custom-spacing transition-transform duration-200 hover:scale-110">주변기기</a>
             </nav>            
             <button class="bg-orange-500 text-white px-4 py-2 rounded hover:bg-orange-400">로그인</button>
         </div>
@@ -45,12 +40,12 @@
         <h1 class="text-5xl font-bold text-center mb-6">당신이 찾고있는 제품은?</h1>
         <br>
         <br>
-        <div class="grid grid-rows-3 grid-cols-6 gap-4"> <!-- 해당 div 영역 버튼은 기능 구현할 필요 X, 외관상 디자인으로만 존재 -->
+        <div class="grid grid-rows-3 grid-cols-6 gap-4">
             <button class="bg-gray-100 px-2 py-2 rounded-full w-full font-bold border-2 border-transparent hover:border-orange-500 transition-transform duration-200 hover:scale-110">삼성</button>
             <button class="bg-gray-100 px-2 py-2 rounded-full w-full font-bold border-2 border-transparent hover:border-orange-500 transition-transform duration-200 hover:scale-110">LG</button>
             <button class="bg-gray-100 px-2 py-2 rounded-full w-full font-bold border-2 border-transparent hover:border-orange-500 transition-transform duration-200 hover:scale-110">MSI</button>
             <button class="bg-gray-100 px-2 py-2 rounded-full w-full font-bold border-2 border-transparent hover:border-orange-500 transition-transform duration-200 hover:scale-110">Lenovo</button>
-            <button class="bg-gray-100 px-2 py-2 rounded-full w-full font-bold border-2 border-transparent hover:border-orange-500 transition-transform duration-200 hover:scale-110">Apple</button>
+            <button class="bg-gray-100 px-2 py-2 rounded-full w-full font-bold border-2 border-transparent hover:border-orange-500 transition-transform duration-200 hover:scale-110">apple</button>
             <button class="bg-gray-100 px-2 py-2 rounded-full w-full font-bold border-2 border-transparent hover:border-orange-500 transition-transform duration-200 hover:scale-110">ASUS</button>
             <button class="bg-gray-100 px-2 py-2 rounded-full w-full font-bold border-2 border-transparent hover:border-orange-500 transition-transform duration-200 hover:scale-110">인텔</button>
             <button class="bg-gray-100 px-2 py-2 rounded-full w-full font-bold border-2 border-transparent hover:border-orange-500 transition-transform duration-200 hover:scale-110">AMD</button>
@@ -64,9 +59,7 @@
             <button class="bg-gray-100 px-2 py-2 rounded-full w-full font-bold border-2 border-transparent hover:border-orange-500 transition-transform duration-200 hover:scale-110">키보드</button>
             <button class="bg-gray-100 px-2 py-2 rounded-full w-full font-bold border-2 border-transparent hover:border-orange-500 transition-transform duration-200 hover:scale-110">모니터</button>
             <button class="bg-gray-100 px-2 py-2 rounded-full w-full font-bold border-2 border-transparent hover:border-orange-500 transition-transform duration-200 hover:scale-110">스피커</button>
-        </div>
-        <br>
-        <br>     
+        </div>        
         <div class="mt-8 flex justify-center gap-4">
             <input type="text" placeholder="검색하실 상품을 입력하시오." class="border border-gray-300 p-4 w-1/2 rounded-l text-lg">
             <button class="bg-orange-500 text-white px-6 py-3 rounded-r text-lg hover:bg-orange-400">검색하기</button>
@@ -74,37 +67,35 @@
         <br>
         <hr class="border-t border-gray-300 my-4">
         <br>
-        <div class="flex justify-center">
-            <table class="table-auto w-full text-left max-w-4xl">
-                <thead>
-                    <tr>
-                        <th class="border-b px-4 py-2 text-sm">Affiliation: 컴퓨터공학과</th>
-                        <th class="border-b px-4 py-2 text-sm">Web_Programming</th>
-                        <th class="border-b px-4 py-2 text-sm">Division of Roles</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td class="border-b px-4 py-2 text-sm">
-                            <p>&nbsp;Professor: 김재호</p>
-                            <p>&nbsp;T.L: 20221918_정환희</p>
-                            <p>&nbsp;T.M: 20231343_정찬욱</p>
-                            <p>&nbsp;T.M: 20181478_조성현</p>
-                        </td>
-                        <td class="border-b px-4 py-2 text-sm">
-                            <p>&nbsp;Subject: 온라인 쇼핑몰</p>
-                            <p>&nbsp;function_1: 로그인</p>
-                            <p>&nbsp;function_2: 검색</p>
-                            <p>&nbsp;function_3: 장바구니</p>
-                        </td>
-                        <td class="border-b px-4 py-2 text-sm">
-                            <p>&nbsp;Front-end: html/css</p>
-                            <p>&nbsp;Back-end: xampp(Apache/php/Mysql)</p>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>        
+                <table class="table-auto w-full text-left max-w-4xl">
+            <thead>
+                <tr>
+                    <th class="border-b px-4 py-2">Affiliation: 컴퓨터공학과</th>
+                    <th class="border-b px-4 py-2">Web_Programming</th>
+                    <th class="border-b px-4 py-2">Division of Roles</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="border-b px-4 py-2">
+                        <p>&nbsp;Professor: 김재호</p>
+                        <p>&nbsp;T.L: 20221918_정환희</p>
+                        <p>&nbsp;T.M: 20231343_정찬욱</p>
+                        <p>&nbsp;T.M: 20181478_조성현</p>
+                    </td>
+                    <td class="border-b px-4 py-2">
+                        <p>&nbsp;Subject: 온라인 쇼핑몰</p>
+                        <p>&nbsp;function_1: 로그인</p>
+                        <p>&nbsp;function_2: 검색</p>
+                        <p>&nbsp;function_3: 장바구니</p>
+                    </td>
+                    <td class="border-b px-4 py-2">
+                        <p>&nbsp;Front-end: html/css</p>
+                        <p>&nbsp;Back-end: xampp(Apache/php/Mysql)</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
     </main>    
 </body>
 </html>

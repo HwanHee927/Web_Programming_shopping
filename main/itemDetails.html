@@ -25,15 +25,15 @@
                 <img src="../image/logo.png" alt="Logo" class="h-10"> <!-- 웹 로고-->
               </button>
             <nav class="flex space-x-4">
-                <a href="#" class="text-gray-700 hover:text-orange-500 text-2xl font-bold custom-spacing">의류</a>
-                <a href="#" class="text-gray-700 hover:text-orange-500 text-2xl font-bold custom-spacing">화장품</a>
-                <a href="#" class="text-gray-700 hover:text-orange-500 text-2xl font-bold custom-spacing">식품/건강</a>
-                <a href="#" class="text-gray-700 hover:text-orange-500 text-2xl font-bold custom-spacing">전자제품</a>
-                <a href="#" class="text-gray-700 hover:text-orange-500 text-2xl font-bold custom-spacing">가구</a>
-                <a href="#" class="text-gray-700 hover:text-orange-500 text-2xl font-bold custom-spacing">생활</a>
-                <a href="#" class="text-gray-700 hover:text-orange-500 text-2xl font-bold custom-spacing">스포츠/레저</a>
-                <a href="#" class="text-gray-700 hover:text-orange-500 text-2xl font-bold custom-spacing">문구/사무용품</a>
-                <a href="#" class="text-gray-700 hover:text-orange-500 text-2xl font-bold custom-spacing">유아/아동용품</a>
+                <a href="#" class="text-gray-700 hover:text-orange-500 text-2xl font-bold transition-transform duration-200 hover:scale-110">데스크톱</a>
+                <a href="#" class="text-gray-700 hover:text-orange-500 text-2xl font-bold transition-transform duration-200 hover:scale-110">노트북</a>
+                <a href="#" class="text-gray-700 hover:text-orange-500 text-2xl font-bold transition-transform duration-200 hover:scale-110">CPU</a>
+                <a href="#" class="text-gray-700 hover:text-orange-500 text-2xl font-bold transition-transform duration-200 hover:scale-110">그래픽카드</a>
+                <a href="#" class="text-gray-700 hover:text-orange-500 text-2xl font-bold transition-transform duration-200 hover:scale-110">HDD/SSD</a>
+                <a href="#" class="text-gray-700 hover:text-orange-500 text-2xl font-bold transition-transform duration-200 hover:scale-110">쿨러</a>
+                <a href="#" class="text-gray-700 hover:text-orange-500 text-2xl font-bold transition-transform duration-200 hover:scale-110">케이스</a>
+                <a href="#" class="text-gray-700 hover:text-orange-500 text-2xl font-bold transition-transform duration-200 hover:scale-110">파워</a>
+                <a href="#" class="text-gray-700 hover:text-orange-500 text-2xl font-bold transition-transform duration-200 hover:scale-110">주변기기</a>
             </nav>
             <button class="bg-orange-500 text-white px-4 py-2 rounded hover:bg-orange-400">로그인</button>
         </div>
@@ -44,7 +44,7 @@
                 <img src="../image/item_computer.png" alt="Product Image" class="w-1/2 rounded-lg">
             </div>
             <h2 class="text-center text-2xl font-bold mb-6">상품 상세정보</h2>
-            <div class="overflow-x-auto">
+            <div class="overflow-x-auto"> <!--DB의 상품 정보 테이블의 Column에 맞출 것-->
                 <table class="min-w-full bg-white border border-gray-300">
                     <tbody>
                         <tr class="border-b">
@@ -138,8 +138,9 @@
             </div>
         </div>
         <div class="flex justify-center mt-6 space-x-4">
-            <!-- 장바구니 담기 버튼에 addToCart 함수 추가 -->
+            <!--장바구니 담기 버튼 클릭 시 장바구니 DB에 저장할 것 -->
             <button class="bg-white px-6 py-2 rounded shadow" onclick="addToCart()">장바구니 담기</button>
+            <!-- 구매하기 버튼 클릭 시 결제 DB에 저장할 것-->
             <button class="bg-orange-500 text-white px-6 py-2 rounded shadow">구매하기</button>            
         </div>
         <br>

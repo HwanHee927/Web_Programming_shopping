@@ -17,7 +17,7 @@
         <div class="container mx-auto flex justify-between items-center p-5">
             <button class="bg-transparent text-orange-500 border-none px-4 py-2 rounded">
                 <img src="/image/logo.png" alt="Logo" class="h-10"> <!-- 웹 로고-->
-            </button>
+              </button>
             <nav class="flex space-x-4">
                 <a href="#" class="text-gray-700 hover:text-orange-500 text-2xl font-bold transition-transform duration-200 hover:scale-110">데스크톱</a>
                 <a href="#" class="text-gray-700 hover:text-orange-500 text-2xl font-bold transition-transform duration-200 hover:scale-110">노트북</a>
@@ -45,9 +45,10 @@
                         <th class="w-2/12 px-4 py-2 border-b">상품금액</th>
                         <th class="w-2/12 px-4 py-2 border-b">할인/적립</th>
                         <th class="w-2/12 px-4 py-2 border-b">합계금액</th>
+                        <th class="w-1/12 px-4 py-2 border-b">배송비</th>
                     </tr>
                 </thead>
-                <tbody> <!--상품 테이블의 Column에 맞출 것 // 상품명, 가격, 스펙 등-->
+                <tbody>
                     <tr class="border-b">
                         <td class="px-4 py-2 text-center"><input type="checkbox" checked></td>
                         <td class="px-4 py-2 flex items-center">
@@ -60,6 +61,7 @@
                         <td class="px-4 py-2 text-center">100,000원</td>
                         <td class="px-4 py-2 text-center">-</td>
                         <td class="px-4 py-2 text-center">100,000원</td>
+                        <td class="px-4 py-2 text-center">2500원</td>
                     </tr>
                     <tr class="border-b">
                         <td class="px-4 py-2 text-center"><input type="checkbox" checked></td>
@@ -73,6 +75,7 @@
                         <td class="px-4 py-2 text-center">100,000원</td>
                         <td class="px-4 py-2 text-center">-</td>
                         <td class="px-4 py-2 text-center">100,000원</td>
+                        <td class="px-4 py-2 text-center">-</td>
                     </tr>
                     <tr class="border-b">
                         <td class="px-4 py-2 text-center"><input type="checkbox" checked></td>
@@ -86,6 +89,7 @@
                         <td class="px-4 py-2 text-center">500,000원</td>
                         <td class="px-4 py-2 text-center">-</td>
                         <td class="px-4 py-2 text-center">500,000원</td>
+                        <td class="px-4 py-2 text-center">-</td>
                     </tr>
                     <tr class="border-b">
                         <td class="px-4 py-2 text-center"><input type="checkbox" checked></td>
@@ -95,10 +99,11 @@
                                 <div class="font-bold">Western Digital WD Blue 3D SSD 512GB</div>
                             </div>
                         </td>
-                        <td class="px-4 py-2 text-center">5개</td>
+                        <td class="px-4 py-2 text-center">1개</td>
                         <td class="px-4 py-2 text-center">100,000원</td>
                         <td class="px-4 py-2 text-center">-</td>
-                        <td class="px-4 py-2 text-center">500,000원</td>
+                        <td class="px-4 py-2 text-center">100,000원</td>
+                        <td class="px-4 py-2 text-center">-</td>
                     </tr>
                     <tr class="border-b">
                         <td class="px-4 py-2 text-center"><input type="checkbox" checked></td>
@@ -108,27 +113,21 @@
                                 <div class="font-bold">마이크로닉스 COOLMAX 스테디</div>
                             </div>
                         </td>
-                        <td class="px-4 py-2 text-center">1개</td>
-                        <td class="px-4 py-2 text-center">100,000원</td>
+                        <td class="px-4 py-2 text-center">2개</td>
+                        <td class="px-4 py-2 text-center">200,000원</td>
                         <td class="px-4 py-2 text-center">-</td>
-                        <td class="px-4 py-2 text-center">100,000원</td>
-                    </tr>
-                    <tr class="border-b">
-                        <td class="px-4 py-2 text-center" colspan="6">
-                            <div class="text-center font-bold text-gray-700">
-                                배송비: $variable원 <!-- 배송비 가격 2500원으로 고정, 변수에 2500원 저장 후 출력할 것 -->
-                            </div>
-                        </td>
+                        <td class="px-4 py-2 text-center">200,000원</td>
+                        <td class="px-4 py-2 text-center">-</td>
                     </tr>
                 </tbody>
             </table>
         </div>
         <div class="flex justify-between items-center mt-4">
-            <button class="bg-gray-200 text-gray-700 px-4 py-2 rounded">선택 상품 삭제</button> <!-- 체크 박스에 체크된 상품에 대해 버튼 클릭 시 폼 & DB 레코드 삭제 -->
-            <div class="text-lg font-bold text-right">선택한 $variable개의 상품금액: $variable입니다.</div> <!--각 상품의 가격을 합산하여 변수로 출력할 것-->
+            <button class="bg-gray-200 text-gray-700 px-4 py-2 rounded">선택 상품 삭제</button>
+            <div class="text-lg font-bold">총 5개의 상품금액: ~~입니다.</div> <!--함수 사용해서 변수로 값 입력할 것-->
             <div>
-                <button class="bg-gray-300 text-gray-700 px-4 py-2 rounded mr-2 border-none">선택 상품 주문</button> <!--  체크 박스에 체크된 상품에 대해 상품 주문 itemPayment.html로 이동 -->
-                <button class="bg-orange-500 text-white px-4 py-2 rounded border-none">전체 상품 주문</button><!-- 체크 박스와 상관 없이 모든 상품을 주문 & itemPayment.html로 이동 -->
+                <button class="bg-gray-300 text-gray-700 px-4 py-2 rounded mr-2 border-none">선택 상품 주문</button>
+                <button class="bg-orange-500 text-white px-4 py-2 rounded border-none">전체 상품 주문</button>
             </div>
         </div>
         <br>
