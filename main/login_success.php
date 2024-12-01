@@ -7,9 +7,9 @@
     <title>회원가입 완료</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        body {
-            font-family: 'Noto Sans KR', sans-serif;
-        }
+    body {
+        font-family: 'Noto Sans KR', sans-serif;
+    }
     </style>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
 </head>
@@ -32,4 +32,5 @@
         </a>
     </div>
 </body>
+
 </html>
