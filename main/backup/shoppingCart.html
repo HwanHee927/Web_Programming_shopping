@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>장바구니</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <header class="bg-white shadow-md">
+        <div class="container mx-auto flex justify-between items-center p-5">
+            <button class="bg-transparent text-orange-500 border-none px-4 py-2 rounded">
+                <img src="/image/logo.png" alt="Logo" class="h-10"> <!-- 웹 로고-->
+            </button>
+            <nav class="flex space-x-4">
+                <a href="#" class="text-gray-700 hover:text-orange-500 text-2xl font-bold transition-transform duration-200 hover:scale-110">데스크톱</a>
+                <a href="#" class="text-gray-700 hover:text-orange-500 text-2xl font-bold transition-transform duration-200 hover:scale-110">노트북</a>
+                <a href="#" class="text-gray-700 hover:text-orange-500 text-2xl font-bold transition-transform duration-200 hover:scale-110">CPU</a>
+                <a href="#" class="text-gray-700 hover:text-orange-500 text-2xl font-bold transition-transform duration-200 hover:scale-110">그래픽카드</a>
+                <a href="#" class="text-gray-700 hover:text-orange-500 text-2xl font-bold transition-transform duration-200 hover:scale-110">HDD/SSD</a>
+                <a href="#" class="text-gray-700 hover:text-orange-500 text-2xl font-bold transition-transform duration-200 hover:scale-110">쿨러</a>
+                <a href="#" class="text-gray-700 hover:text-orange-500 text-2xl font-bold transition-transform duration-200 hover:scale-110">케이스</a>
+                <a href="#" class="text-gray-700 hover:text-orange-500 text-2xl font-bold transition-transform duration-200 hover:scale-110">파워</a>
+                <a href="#" class="text-gray-700 hover:text-orange-500 text-2xl font-bold transition-transform duration-200 hover:scale-110">주변기기</a>
+            </nav>
+            <button class="bg-orange-500 text-white px-4 py-2 rounded hover:bg-orange-400">로그인</button>
+        </div>
+    </header>
+
+    <main class="container mx-auto mt-8 px-6">
+        <h1 class="text-2xl font-bold text-center mb-6">장바구니</h1>
+        <div class="bg-white shadow-md rounded-lg overflow-hidden">
+            <table class="min-w-full bg-white">
+                <thead>
+                    <tr>
+                        <th class="w-1/12 px-4 py-2 border-b">선택</th>
+                        <th class="w-4/12 px-4 py-2 border-b">상품/옵션 정보</th>
+                        <th class="w-1/12 px-4 py-2 border-b">수량</th>
+                        <th class="w-2/12 px-4 py-2 border-b">상품금액</th>
+                        <th class="w-2/12 px-4 py-2 border-b">할인/적립</th>
+                        <th class="w-2/12 px-4 py-2 border-b">합계금액</th>
+                    </tr>
+                </thead>
+                <tbody> <!--상품 테이블의 Column에 맞출 것 // 상품명, 가격, 스펙 등-->
+                    <tr class="border-b">
+                        <td class="px-4 py-2 text-center"><input type="checkbox" checked></td>
+                        <td class="px-4 py-2 flex items-center">
+                            <img src="../image/cpu.png" alt="Product Image" class="mr-4 max-w-[100px] border border-gray-300 p-2 rounded">
+                            <div>
+                                <div class="font-bold">intel core i5-13400f</div>
+                            </div>
+                        </td>
+                        <td class="px-4 py-2 text-center">1개</td>
+                        <td class="px-4 py-2 text-center">100,000원</td>
+                        <td class="px-4 py-2 text-center">-</td>
+                        <td class="px-4 py-2 text-center">100,000원</td>
+                    </tr>
+                    <tr class="border-b">
+                        <td class="px-4 py-2 text-center"><input type="checkbox" checked></td>
+                        <td class="px-4 py-2 flex items-center">
+                            <img src="../image/graphicCard.png" alt="Product Image" class="mr-4 max-w-[100px] border border-gray-300 p-2 rounded">
+                            <div>
+                                <div class="font-bold">ASUS DUAL 지포스 RTX 2060 O6G EVO D6 6GB</div>
+                            </div>
+                        </td>
+                        <td class="px-4 py-2 text-center">1개</td>
+                        <td class="px-4 py-2 text-center">100,000원</td>
+                        <td class="px-4 py-2 text-center">-</td>
+                        <td class="px-4 py-2 text-center">100,000원</td>
+                    </tr>
+                    <tr class="border-b">
+                        <td class="px-4 py-2 text-center"><input type="checkbox" checked></td>
+                        <td class="px-4 py-2 flex items-center">
+                            <img src="../image/ram.png" alt="Product Image" class="mr-4 max-w-[100px] border border-gray-300 p-2 rounded">
+                            <div>
+                                <div class="font-bold">삼성전자 DDR4-2666</div>
+                            </div>
+                        </td>
+                        <td class="px-4 py-2 text-center">5개</td>
+                        <td class="px-4 py-2 text-center">500,000원</td>
+                        <td class="px-4 py-2 text-center">-</td>
+                        <td class="px-4 py-2 text-center">500,000원</td>
+                    </tr>
+                    <tr class="border-b">
+                        <td class="px-4 py-2 text-center"><input type="checkbox" checked></td>
+                        <td class="px-4 py-2 flex items-center">
+                            <img src="../image/ssd.png" alt="Product Image" class="mr-4 max-w-[100px] border border-gray-300 p-2 rounded">
+                            <div>
+                                <div class="font-bold">Western Digital WD Blue 3D SSD 512GB</div>
+                            </div>
+                        </td>
+                        <td class="px-4 py-2 text-center">5개</td>
+                        <td class="px-4 py-2 text-center">100,000원</td>
+                        <td class="px-4 py-2 text-center">-</td>
+                        <td class="px-4 py-2 text-center">500,000원</td>
+                    </tr>
+                    <tr class="border-b">
+                        <td class="px-4 py-2 text-center"><input type="checkbox" checked></td>
+                        <td class="px-4 py-2 flex items-center">
+                            <img src="../image/middleTower.png" alt="Product Image" class="mr-4 max-w-[100px] border border-gray-300 p-2 rounded">
+                            <div>
+                                <div class="font-bold">마이크로닉스 COOLMAX 스테디</div>
+                            </div>
+                        </td>
+                        <td class="px-4 py-2 text-center">1개</td>
+                        <td class="px-4 py-2 text-center">100,000원</td>
+                        <td class="px-4 py-2 text-center">-</td>
+                        <td class="px-4 py-2 text-center">100,000원</td>
+                    </tr>
+                    <tr class="border-b">
+                        <td class="px-4 py-2 text-center" colspan="6">
+                            <div class="text-center font-bold text-gray-700">
+                                배송비: $variable원 <!-- 배송비 가격 2500원으로 고정, 변수에 2500원 저장 후 출력할 것 -->
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="flex justify-between items-center mt-4">
+            <button class="bg-gray-200 text-gray-700 px-4 py-2 rounded">선택 상품 삭제</button> <!-- 체크 박스에 체크된 상품에 대해 버튼 클릭 시 폼 & DB 레코드 삭제 -->
+            <div class="text-lg font-bold text-right">선택한 $variable개의 상품금액: $variable입니다.</div> <!--각 상품의 가격을 합산하여 변수로 출력할 것-->
+            <div>
+                <button class="bg-gray-300 text-gray-700 px-4 py-2 rounded mr-2 border-none">선택 상품 주문</button> <!--  체크 박스에 체크된 상품에 대해 상품 주문 itemPayment.html로 이동 -->
+                <button class="bg-orange-500 text-white px-4 py-2 rounded border-none">전체 상품 주문</button><!-- 체크 박스와 상관 없이 모든 상품을 주문 & itemPayment.html로 이동 -->
+            </div>
+        </div>
+        <br>
+    </main>
+</body>
+</html>

@@ -24,7 +24,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $sql = "INSERT INTO user (username, password, name, phone) VALUES ('$username', '$password', '$name', '$phone')";
 
     if ($conn->query($sql) === TRUE) {
-        header("Location: login_success.html");
+        header("Location: login_success.php");
         exit();
     } else {
         echo "오류: " . $sql . "<br>" . $conn->error;
@@ -34,3 +34,4 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 // 연결 종료
 $conn->close();
 ?>
+
