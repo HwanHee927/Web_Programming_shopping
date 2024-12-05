@@ -14,7 +14,12 @@
     <script>
         // 장바구니 담기 클릭 시 알림을 표시하는 함수
         function addToCart() {
-            alert("상품이 장바구니에 등록되었습니다!");
+                
+            if (confirm("상품이 장바구니에 등록되었습니다! 장바구니로 이동하시겠습니까?")) {
+                // 장바구니로 이동
+                window.location.href = "itemPayment.html"; // 원하는 장바구니 페이지 URL로 변경
+            } else {
+            }
         }
     </script>
 </head>
@@ -140,6 +145,7 @@
         <div class="flex justify-center mt-6 space-x-4">
             <!--장바구니 담기 버튼 클릭 시 장바구니 DB에 저장할 것 -->
             <button class="bg-white px-6 py-2 rounded shadow" onclick="addToCart()">장바구니 담기</button>
+            
             <!-- 구매하기 버튼 클릭 시 결제 DB에 저장할 것-->
             <button class="bg-orange-500 text-white px-6 py-2 rounded shadow">구매하기</button>            
         </div>
